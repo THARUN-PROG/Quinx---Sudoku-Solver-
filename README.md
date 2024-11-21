@@ -1,43 +1,36 @@
-# Quinx---Sudoku-Solver-
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Step 1: Project Setup
+## Getting Started
 
-Use npx create-next-app sudoku-solver
+First, run the development server:
 
-Step 2: Installing Dependencies
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-npm install styled-components
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Step 3: Create the components, utils, pages and styles folder and create files into it.
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-Step 3: Run the Application
+## Learn More
 
-npm start
+To learn more about Next.js, take a look at the following resources:
 
-Step 4: Open the browser and navigate to http://localhost:3000.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
----------------------------------Logic------------------------------------------------
+## Deploy on Vercel
 
-For Sudoku Solver I used backtracking algorithm to solve it.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-The Sudoku puzzle is represented as a 9x9 grid (2D array).
-Empty cells are initialized with a value like 0 or null.
-
-I have provided 3 functions
-isValid Function
-findEmptyCell Function
-Backtracking Algorithm
-
-The application works as below
-The algorithm starts by finding the first empty cell in the grid.
-It attempts to place numbers from 1 to 9 in the empty cell, checking each time if the placement is valid.
-If a number is valid, it proceeds recursively to solve the next cell.
-If no valid number is found for a cell, the algorithm backtracks (i.e., removes the last placed number) and tries the next option.
-This process continues until the grid is fully solved or determined to be unsolvable.
-
-
-When the user clicks the "Solve" button, 
-The grid data from the input fields is passed to the solveSudoku function.
-The result is updated in the state to display the solved grid.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
